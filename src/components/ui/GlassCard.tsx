@@ -51,6 +51,7 @@ export const GlassCard: React.FC<GlassCardProps> = ({
         hoverClasses,
         className
       )}
+      style={style}
     >
       {children}
     </div>
