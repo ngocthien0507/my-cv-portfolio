@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useState } from 'react'
 import { SkillCard } from '@/components/common/SkillCard'
 import { GlassCard } from '@/components/ui/GlassCard'
