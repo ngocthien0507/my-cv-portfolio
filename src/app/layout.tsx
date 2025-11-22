@@ -77,8 +77,51 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Thien Nguyen Ngoc",
+    "jobTitle": "Senior Software Engineer",
+    "description": "Senior Software Engineer specializing in React Native and modern mobile development with 5+ years of experience building scalable applications for international clients.",
+    "url": "https://thiennguyen.dev",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Go Vap District",
+      "addressRegion": "Ho Chi Minh City",
+      "addressCountry": "Vietnam"
+    },
+    "sameAs": [
+      "https://linkedin.com/in/thiennguyen-ngoc",
+      "https://github.com/thiennguyen"
+    ],
+    "knowsAbout": [
+      "React Native",
+      "JavaScript",
+      "TypeScript",
+      "Mobile Development",
+      "Next.js",
+      "UI/UX Design",
+      "GraphQL",
+      "Software Architecture"
+    ],
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Infina",
+      "description": "Innovative online investment platform reshaping the investment landscape in Vietnam"
+    }
+  };
+
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        <meta name="theme-color" content="#000000" />
+        <meta name="msapplication-TileColor" content="#000000" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
