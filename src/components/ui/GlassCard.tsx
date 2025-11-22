@@ -17,7 +17,8 @@ export const GlassCard: React.FC<GlassCardProps> = ({
   blur = 'md',
   opacity = 'medium',
   border = true,
-  hover = false
+  hover = false,
+  style
 }) => {
   const blurClasses = {
     sm: 'backdrop-blur-sm',
