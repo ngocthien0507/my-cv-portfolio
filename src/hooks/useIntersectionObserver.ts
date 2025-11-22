@@ -9,7 +9,7 @@ interface UseIntersectionObserverOptions {
 }
 
 interface UseIntersectionObserverReturn {
-  ref: RefObject<HTMLElement>
+  ref: RefObject<HTMLElement | null>
   isIntersecting: boolean
   hasIntersected: boolean
 }
