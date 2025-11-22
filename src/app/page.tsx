@@ -1,3 +1,5 @@
+'use client'
+
 import { Navigation } from '@/components/ui/Navigation'
 import { ProgressBar } from '@/components/ui/ProgressBar'
 import { AnimatedBackground } from '@/components/ui/AnimatedBackground'
