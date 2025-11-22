@@ -8,6 +8,7 @@ interface GlassCardProps {
   opacity?: 'low' | 'medium' | 'high'
   border?: boolean
   hover?: boolean
+  style?: React.CSSProperties
 }
 
 export const GlassCard: React.FC<GlassCardProps> = ({
